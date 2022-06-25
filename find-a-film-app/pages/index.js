@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <>
-    <Header/>
+    <Header title="Find-a-Film"/>
     <main className="main">
       <section className="page">
         <div className="container">
