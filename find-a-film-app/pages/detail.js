@@ -16,7 +16,7 @@ export default function Home() {
 
     //get film details from json with imdbID
     const getFilmRequest = async (filmID) => {
-        const url = `http://www.omdbapi.com/?i=${filmID}&apikey=725e2dca`
+        const url = `https://www.omdbapi.com/?i=${filmID}&apikey=725e2dca`
 
         const response = await fetch(url);
         const responseJson = await response.json();

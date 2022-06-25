@@ -14,7 +14,7 @@ export default function Home() {
 
   //get film details from json with search input value
   const getFilmRequest = async (searchInput) => {
-    const url = `http://www.omdbapi.com/?s=${searchInput}&apikey=725e2dca`
+    const url = `https://www.omdbapi.com/?s=${searchInput}&apikey=725e2dca`
 
     const response = await fetch(url);
     const responseJson = await response.json();
