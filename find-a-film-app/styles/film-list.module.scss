@@ -1,0 +1,9 @@
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.poster {
+    border-radius: 20px;
+    object-fit: cover;
+}

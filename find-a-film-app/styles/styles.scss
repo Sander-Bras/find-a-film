@@ -1,0 +1,16 @@
+@import "./colors.module";
+
+//Global syles
+
+.main {
+  min-height: 100vh;
+  background-color: $backgroundColorDark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  background-color: $backgroundColor;
+}
