@@ -1,5 +1,28 @@
 @import "./colors.module";
+@import "./fonts";
+
+.header {
+    background-color: $backgroundColor;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    z-index: 99;
+
+    @media (min-width: 768px) { 
+        height: 160px;
+     }
+}
 
 .title {
-    color: $backgroundColorDark;
+    color: $textColor;
+    font-family: 'Showtime Normal';
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+    
+    @media (min-width: 768px) { 
+        font-size: 50px;
+     }
 }

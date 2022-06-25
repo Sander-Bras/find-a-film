@@ -1,16 +1,33 @@
 @import "./colors.module";
+@import "./fonts";
 
 //Global syles
 
+body {
+  >* {
+    background-color: $backgroundColorDark;
+    background-image: url('../assets/background.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: soft-light;
+  }
+}
+
 .main {
-  min-height: 100vh;
   background-color: $backgroundColorDark;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  color: $textColor;
+  padding-top: 100px;
+
+  @media (min-width: 768px) {
+    padding-top: 160px;
+  }
 }
 
 .page {
   width: 100%;
-  background-color: $backgroundColor;
+  background-color: $backgroundColorDark;
 }

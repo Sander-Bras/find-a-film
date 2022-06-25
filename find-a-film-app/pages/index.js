@@ -1,4 +1,3 @@
-import HelloWorld from '../components/hello-world'
 import React, { useState, useEffect } from 'react';
 import FilmList from '../components/film-list';
 import SearchBox from '../components/searchbox';
@@ -36,10 +35,10 @@ export default function Home() {
     <main className="main">
       <section className="page">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <SearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
           </div>
-          <div className="row d-flex">
+          <div className="row justify-content-center">
             <FilmList films={films} />
           </div>
         </div>

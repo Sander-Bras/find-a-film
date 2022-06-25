@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import FilmDetails from '../components/film-details';
-import { useRouter } from 'next/router'
-import HelloWorld from '../components/hello-world';
+import { useRouter } from 'next/router';
 import Header from '../components/header';
+import FilmDetails from '../components/film-details';
 
 export default function Home() {
 
@@ -19,6 +18,8 @@ export default function Home() {
         const url = `https://www.omdbapi.com/?i=${filmID}&apikey=725e2dca`
 
         const response = await fetch(url);
+        console.log(response);
+
         const responseJson = await response.json();
 
         console.log(responseJson);
