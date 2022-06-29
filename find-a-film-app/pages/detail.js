@@ -18,11 +18,7 @@ export default function Home() {
         const url = `https://www.omdbapi.com/?i=${filmID}&apikey=725e2dca`
 
         const response = await fetch(url);
-        console.log(response);
-
         const responseJson = await response.json();
-
-        console.log(responseJson);
         setFilms(responseJson);
     };
 

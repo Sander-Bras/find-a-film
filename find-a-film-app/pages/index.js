@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import FilmList from '../components/film-list';
-import SearchBox from '../components/searchbox';
 import Header from '../components/header';
+import SearchBox from '../components/searchbox';
+import FilmList from '../components/film-list';
+
 
 export default function Home() {
 
@@ -18,7 +19,6 @@ export default function Home() {
     const response = await fetch(url);
     const responseJson = await response.json();
 
-    console.log(responseJson);
     if (responseJson.Search) {
       setFilms(responseJson.Search);
     }

@@ -1,24 +1,21 @@
-# Example app with next-sass
+## Development mode
 
-This example demonstrates how to use Next.js' built-in Global Sass/Scss imports and Component-Level Sass/Scss modules support.
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-next-sass)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-next-sass&project-name=with-next-sass&repository-name=with-next-sass)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+cd to find-a-film-app location.
 
 ```bash
-npx create-next-app --example with-next-sass with-next-sass-app
-# or
-yarn create next-app --example with-next-sass with-next-sass-app
-# or
-pnpm create next-app --example with-next-sass with-next-sass-app
+run npm i 
 ```
+(minimum Node.js version of 12.22.0 required)
+
+Run local on localhost:3000 with:
+
+```bash
+npm run dev
+# or
+yarn run dev
+```
+
+## Production mode
 
 Run production build with:
 
@@ -30,4 +27,6 @@ yarn build
 yarn start
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Live URL
+
+Visit live app at: [Vercel](https://find-a-film.vercel.app)

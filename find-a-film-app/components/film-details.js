@@ -12,8 +12,8 @@ const FilmDetails = (props) => {
             </div>
             <div className={styles.detailContainer+ ' ' + 'col-10 col-md-6 mb-5 mt-0 my-md-5 p-4'}>
                 
-                <h3>{props.film.Title} ({props.film.Year})</h3>
-                <span>Genre: {props.film.Genre}</span>
+                <h3>{props.film.Title} {props.film.Year}</h3>
+                <span>{props.film.Genre}</span>
                 <span className={styles.director}>{props.film.Director}</span>
                 <p>{props.film.Plot}</p>
             </div>

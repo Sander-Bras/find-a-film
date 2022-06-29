@@ -4,8 +4,6 @@ import Logo from './logo';
 
 export default function Header(props) {
 
-    console.log(props);
-
     return (
         <header className={styles.header}>
             <div className="container">
